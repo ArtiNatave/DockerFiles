@@ -1,0 +1,9 @@
+sudo yum install docker -y
+sudo service docker start
+sudo service docker status
+
+docker search nginx
+docker pull nginx      //////It will pull nginx image from DockerHub and install on your localhost
+docker images          //////It will show you all installed software.
+docker run -d nginx    //////create a nginx container from image -d(daemon) it will help you to kkeep you container in runninfg state even if you exit from container
+docker ps              //////Show you running container
